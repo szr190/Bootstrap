@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>03-栅格布局</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<style type="text/css">
+		.row div{
+			background: green;
+			height: 100px;
+			color: #fff;
+			border:1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		row 		表示行的意思
+		col-lg-1	表示列
+					数字就是表示占了几列
+					数字不能超过12,超过12就会换到另外一行
+					如果只有一列,数值超过12就会按12去显示
+	 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-1">第一行第一列</div>
+			<div class="col-lg-11">第一行第二列</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-5">第二行第一列</div>
+			<div class="col-lg-3">第二行第二列</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">第三行第一列</div>
+			<div class="col-lg-6">第三行第二列</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">第四行第一列</div>
+			<div class="col-lg-8">第四行第二列</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-13">第五行第一列</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-8">第六行第一列</div>
+			<div class="col-lg-3">第六行第二列</div>
+			<div class="col-lg-1">第六行第三列</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

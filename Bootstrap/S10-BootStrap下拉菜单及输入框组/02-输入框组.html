@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>02-输入框组</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<!-- 
+		input-group 用来放置输入框组,只能针对输入框,其它的表单元素没关系
+		input-group-addon 给输入框前后添加的额外元素
+		input-group-*(lg/md/sm) 用来修改输入框组的尺寸(是没有xs这个尺寸的)
+		input-group-btn 添加的额外元素是按钮
+	 -->
+	<div class="container">
+		<div class="row">
+			<div class="input-group">
+				<span class="input-group-addon">@</span>
+				<input type="text" class="form-control">
+			</div>
+		</div>
+		<hr>
+		<!-- 尺寸 -->
+		<div class="row">
+			<div class="input-group input-group-lg">
+				<span class="input-group-addon">@</span>
+				<input type="text" class="form-control">
+			</div>
+			<div class="input-group input-group-md">
+				<span class="input-group-addon">@</span>
+				<input type="text" class="form-control">
+			</div>
+			<div class="input-group input-group-sm">
+				<span class="input-group-addon">@</span>
+				<input type="text" class="form-control">
+			</div>
+		</div>
+		<hr>
+		<!-- 额外内容方checkbox -->
+		<div class="row">
+			<div class="input-group">
+				<span class="input-group-addon"><input type="checkbox"></span>
+				<input type="text" class="form-control">
+			</div>
+		</div>
+		<hr>
+		<!-- 额外内容方radio -->
+		<div class="row">
+			<div class="input-group">
+				<span class="input-group-addon"><input type="radio"></span>
+				<input type="text" class="form-control">
+			</div>
+		</div>
+		<hr>
+		<!-- 额外内容方放按钮 -->
+		<div class="row">
+			<div class="input-group">
+				<input type="text" class="form-control">
+				<span class="input-group-btn">
+					<button class="btn btn-default">搜索</button>
+				</span>
+			</div>
+		</div>
+		<hr>
+		<!-- 额外放下拉菜单 -->
+		<div class="row">
+			<div class="input-group">
+				<div class="input-group-btn">
+						<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							搜索 <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="">html</a></li>
+							<li><a href="">css</a></li>
+							<li><a href="">js</a></li>
+							<li><a href="">less</a></li>
+						</ul>
+				</div>
+				<input type="text" class="form-control">				
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

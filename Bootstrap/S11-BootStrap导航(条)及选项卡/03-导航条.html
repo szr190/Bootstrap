@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>03-导航条</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<!-- navbar 导航条的基础样式 
+				navbar-default 导航条的默认样式
+			-->
+			<ul class="nav navbar-nav">
+				<!-- nav navbar-nav 导航条里菜单的固定样式组合 -->
+				<li><a href="#">首页</a></li>
+				<li><a href="#">新闻中心</a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+		</nav>
+		<hr>
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<!--  
+				navbar-inverse 黑色导航条
+				navbar-static-top 直角导航
+			-->
+			<ul class="nav navbar-nav">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">新闻中心</a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+		</nav>
+		<hr>
+		<nav class="navbar navbar-inverse navbar-fixed-bottom">
+			<!--  
+				navbar-fixed-top 导航条固定在上面
+				navbar-fixed-bottom 导航条固定在下面
+			-->
+			<ul class="nav navbar-nav">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">新闻中心</a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+		</nav>
+		<hr>
+		<nav class="navbar navbar-default">
+			<!-- navbar-brand 用来放logo,需要配合navbar-header来使用,表示导航的头部-->
+			<div class="navbar-header">
+				<a href="" class="navbar-brand">logo</a>
+			</div>			
+			<ul class="nav navbar-nav">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">新闻中心</a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+			<!-- 一般情况下都会把nav包在container的外面,可以避免移动端的问题 -->
+		</nav>
+		<hr>
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<a href="" class="navbar-brand">logo</a>
+			</div>			
+			<ul class="nav navbar-nav navbar-left">
+			<!-- navbar-left 内容以左边对齐 -->
+				<li><a href="#">首页</a></li>
+				<li><a href="#">新闻中心</a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+
+			<!-- 如果导航里有文字,需要加navbar-text ; 如果有链接,需要加navbar-link -->
+			<a href="" class="navbar-link navbar-text">链接</a>
+
+			<!-- 如果导航里只有一个按钮,给他加一个navbar-btn -->
+			<button class="btn btn-default navbar-btn">搜索</button>
+			
+			<!-- 如果导航里有form,就需要给form添加navbar-form,在一行显示就要添加navbar-left -->
+			<form action="" class="navbar-form navbar-left">
+				<input type="text" class="form-control">
+				<button class="btn btn-default">搜索</button>
+			</form>
+
+			<ul class="nav navbar-nav navbar-right">
+			<!-- navbar-right 内容以右边对齐 -->
+				<li><a href="#">登录</a></li>
+				<li><a href="#">注册</a></li>
+			</ul>
+		</nav>
+	</div>
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

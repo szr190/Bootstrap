@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>01-单个折叠菜单</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	
+	<!-- 
+		1.给要点击的那个元素添加一个data-toggle="collapse"的自定义属性,并且需要添加一个data-target="对应的内容区域的id或者class"
+
+		2.给对应的内容区域添加一个id或者class与点击的元素相对应
+
+		3.由于出现闪隐现象,所以需要给panel-body的外部添加一个父级,而不是在panel-body上添加与点击部分关联的id或者class
+
+		4.给panel-body的父级添加一个in类,目的是防止收回去之后再展开
+	-->
+	<div class="container" style="margin-top: 50px;">
+		<div class="row">
+			<div class="col-lg-5">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<a href="#" class="" data-toggle="collapse" data-target="#con1">标题部分</a>
+						</h3>
+					</div>
+					<div id="con1" class="in">
+						<div class="panel-body">
+							这是一个面板内容
+						</div>
+					</div>
+					
+				</div>
+			</div>			
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

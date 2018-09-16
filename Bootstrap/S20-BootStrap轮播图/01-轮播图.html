@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>01-轮播图</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<style type="text/css">
+		#pic{
+			width: 768px;
+			margin:0 auto;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.写一个父级,放一个id和一个carousel的class
+			slide 给图片添加运动效果
+			data-interval="500" 间隔时间(不要低于400,容易出现问题)
+			data-ride="carousel" 页面一加载就开始播放
+		2.小圆点的内容要放在class为carousel-indicators的层里
+		3.图片内容区域要放在一个class为carousel-inner的层里,每一项都需要放到item的层里,这里面还可以放文字,需要加一个carousel-caption区块
+		4.左右按钮(href里面的值要与父级的id一致)
+	-->
+	<div class="container">
+		<div class="carousel slide" id="pic" data-ride="carousel">
+			<!-- 小圆点 -->
+			<ol class="carousel-indicators">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+			<!-- 轮播图图片 -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="../img/1.jpg" alt="">
+					<div class="carousel-caption">
+						<h3>标题1</h3>
+						<p>这里是内容</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="../img/1.jpg" alt="">
+					<div class="carousel-caption">
+						<h3>标题2</h3>
+						<p>这里是内容</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="../img/1.jpg" alt="">
+					<div class="carousel-caption">
+						<h3>标题3</h3>
+						<p>这里是内容</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="../img/1.jpg" alt="">
+					<div class="carousel-caption">
+						<h3>标题4</h3>
+						<p>这里是内容</p>
+					</div>
+				</div>
+			</div>
+			<!-- 左右按钮 -->
+			<a href="#pic" class="carousel-control left" data-slide="prev">&lsaquo;</a>
+			<a href="#pic" class="carousel-control right" data-slide="next">&rsaquo;</a>
+		</div>
+	</div>
+	
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

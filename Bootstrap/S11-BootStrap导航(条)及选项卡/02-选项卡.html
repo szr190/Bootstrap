@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>02-选项卡</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	
+	<!-- 
+		选项卡
+			1.导航对应的所有内容需要放到一个class为tab-content
+			2.需要给每一个内容块都要加上一个class为tab-pane,并且给对应的默认显示内容添加一个active的class类名
+			3.给每一个导航的a标签添加一个data-toggle="tab"的自定义属性
+			4.给每一个div内容添加一个id
+			5.给每一个导航里的a标签添加一个锚点
+	 -->
+	 <div class="container" style="margin-top: 100px;">
+	 	<div class="row">
+	 		<!-- <ul class="nav nav-tabs">
+				<li class="active"><a href="#con1" data-toggle="tab">首页</a></li>
+				<li><a href="#con2" data-toggle="tab">航海历险记</a></li>
+				<li><a href="#con3" data-toggle="tab">魔法涂涂故事会</a></li>
+				<li><a href="#con4" data-toggle="tab">智海云天</a></li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="con1">1</div>
+				<div class="tab-pane" id="con2">2</div>
+				<div class="tab-pane" id="con3">3</div>
+				<div class="tab-pane" id="con4">4</div>
+			</div> -->
+	 	</div>
+	 	<hr>
+	 	<div class="row">
+	 	<!-- 可以放在栅格里使用 -->
+	 		<div class="col-lg-8">
+	 			<ul class="nav nav-tabs">
+					<li class="active"><a href="#con1" data-toggle="tab">首页</a></li>
+					<li><a href="#con2" data-toggle="tab">航海历险记</a></li>
+					<li><a href="#con3" data-toggle="tab">魔法涂涂故事会</a></li>
+					<li><a href="#con4" data-toggle="tab">智海云天</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="con1">1</div>
+					<div class="tab-pane" id="con2">2</div>
+					<div class="tab-pane" id="con3">3</div>
+					<div class="tab-pane" id="con4">4</div>
+				</div>
+	 		</div>
+	 	</div>
+	 </div>
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

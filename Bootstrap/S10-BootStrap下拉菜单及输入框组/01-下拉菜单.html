@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>01-下拉菜单</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<!-- 
+		1.给父级添加一个class dropdown,或者给父级添加定位属性
+		2.给button添加一个data-toggle="dropdown"的属性,并且加一个dropdown-toggle类
+		3.ul需要添加一个dropdown-menu的类
+	 -->
+	<div class="container">
+		<div class="row">
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">button <span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="">html</a></li>
+					<li><a href="">css</a></li>
+					<li><a href="">javascript</a></li>
+					<li><a href="">jquery</a></li>
+					<li><a href="">bootstrap</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!-- 
+		下拉菜单样式
+			open   下拉部分在一开始就展现在外面(默认是展开的,给dropdown添加)
+			dropdown-menu-right 向右对齐(这个需要和btn-block结合使用)
+			dropup  菜单向上展示
+			dropdown-header 菜单里的标题(给li添加)
+			divider  分割线
+			disabled 不能被点击
+	 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="dropdown open">
+					<button class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown">button <span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="">html</a></li>
+						<li><a href="">css</a></li>
+						<li><a href="">javascript</a></li>
+						<li><a href="">jquery</a></li>
+						<li><a href="">bootstrap</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="dropup" style="margin-top: 100px;">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">button <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="">html</a></li>
+						<li><a href="">css</a></li>
+						<li><a href="">javascript</a></li>
+						<li><a href="">jquery</a></li>
+						<li><a href="">bootstrap</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">button <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li class="dropdown-header text-center"><a href="">前端</a></li>
+						<li><a href="">html</a></li>
+						<li><a href="">css</a></li>
+						<li><a href="">javascript</a></li>
+						<li><a href="">jquery</a></li>
+						<li><a href="">bootstrap</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header text-center"><a href="">后端</a></li>
+						<li><a href="">php</a></li>
+						<li><a href="">java</a></li>
+						<li class="disabled"><a href="">C#</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

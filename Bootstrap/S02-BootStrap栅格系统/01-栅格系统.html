@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>01-栅格系统</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	
+	<!-- 
+		自适应宽度100%   container-fluid
+		固定宽度(适应响应式) container
+			宽度>1200 ======1170(PC)
+			992>=宽度<1200 ====970(中型电脑,比如：20,21寸的小型电脑)
+			宽度>=768<992 =====750(平板)
+			宽度<768===========auto(手机)
+
+			注意：
+				-这两种class不能放在一起,可以是兄弟关系,但不能是嵌套的关系
+	 			-如果不想让宽度随着屏幕的宽度而变化,可以给它一个!important来提升优先级,
+	 				这样所有的尺寸都是一个定值
+	 -->
+
+	<div class="container-fluid">
+		<div style="background: red">k1</div>
+	</div>
+	<div class="container">
+		<div style="background: green">k2</div>
+	</div>
+	
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>09-嵌套</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<style type="text/css">
+		.row div{
+			background: green;
+			height: 100px;
+			color: #fff;
+			border:1px solid #000;
+			
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+		每一列里面都可以嵌套一行和n列,不能超过12
+		嵌套里面的元素就会以父级元素的宽度为基准
+	 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="row">
+					<div class="col-lg-4"></div>
+					<div class="col-lg-4"></div>
+					<div class="col-lg-4"></div>
+				</div>
+			</div>
+			<div class="col-lg-6"></div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

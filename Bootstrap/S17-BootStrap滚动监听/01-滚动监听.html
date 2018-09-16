@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<style type="text/css">
+		.nav a{
+			color: #666;
+		}
+		.nav ul{display: none;}
+		.nav .active ul{display: block;}
+		.nav .active>a{color: red;border-left: 1px solid #000;padding: 0 15px;}
+	</style>
+</head>
+<body data-spy="scroll" data-target="#subNav">
+	
+	<!-- 
+		1.谁要滚动就要给它添加data-spy="scroll",并且需要添加一个data-target="值要与导航的父级相关联"
+		2.给导航的父级添加一个id或者class名称,要与滚动的元素相关联,并且要添加一个class="navbar-collapse"
+		3.导航里面的每一个a标签都需要添加上一个锚链接,这样才能与滚动对上号
+		4.滚动区域内容里的标题要添加上相应的id,用于与导航的锚链接对应
+	 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9">
+				<div class="section">
+					<h2 id="gaishu1">概述1</h2>
+					<h3 id="d1">1111111111</h3>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+				</div>
+				<div class="section">
+					<h2 id="gaishu2">概述2</h2>
+					<h3 id="d2">22222222222</h3>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+				</div>
+				<div class="section">
+					<h2 id="gaishu3">概述3</h2>
+					<h3 id="d3">33333333333</h3>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+				</div>
+				<div class="section">
+					<h2 id="gaishu4">概述4</h2>
+					<h3 id="d4">44444444444444</h3>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+				</div>
+				<div class="section">
+					<h2 id="gaishu5">概述5</h2>
+					<h3 id="d5">55555555555</h3>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+					<p>222222222222222222222222222222222</p>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div style="position: fixed;top: 0;" id="subNav" class="navbar-collapse">
+					<ul class="nav">
+						<li>
+							<a href="#gaishu1">概述1</a>
+							<ul>
+								<li><a href="">1</a></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#gaishu2">概述2</a>
+							<ul>
+								<li><a href="">1</a></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#gaishu3">概述3</a>
+							<ul>
+								<li><a href="">1</a></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#gaishu4">概述4</a>
+							<ul>
+								<li><a href="">1</a></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#gaishu5">概述5</a>
+							<ul>
+								<li><a href="">1</a></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

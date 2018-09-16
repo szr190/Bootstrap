@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>01-提示标签</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<style type="text/css">
+		p{margin:200px 0;}
+	</style>
+</head>
+<body>
+	<!-- 
+		data-placement="bottom" 改变方向
+	 -->
+	<div class="container">
+		<!-- 应用在a标签上 -->
+		<div class="row">
+			<p>专注学习<a href="#" class="tool" data-toggle="tooltip" data-placement="bottom" title="student">student</a>前端的一些课程,比如<a href="#" class="tool" data-toggle="tooltip" title="javascript">JavaScript</a></p>
+		</div>
+		<!-- 应用在按钮上 -->
+		<div class="row">
+			<button class="btn btn-warning tool btnShow" data-toggle="tooltip" title="szr">szr</button>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(".tool").tooltip();
+		$(".btnShow").tooltip('show');
+	</script>
+</body>
+</html>

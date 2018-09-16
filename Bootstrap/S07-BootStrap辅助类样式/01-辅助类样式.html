@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>01-辅助类样式</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<style type="text/css">
+		.sh div{
+			height: 100px;
+			background: green;
+			border: 1px solid #a000;
+		}
+	</style>
+</head>
+<body>
+	
+	 <div class="container">
+	 	<div class="row">
+	 	<!-- 字体的颜色 -->
+	 		<p class="text-muted">12345</p>
+	 		<p class="text-primary">12345</p>
+	 		<p class="text-success">12345</p>
+	 		<p class="text-info">12345</p>
+	 		<p class="text-warning">12345</p>
+	 		<p class="text-danger">12345</p>
+	 	</div>
+	 	<div class="row">
+	 	<!-- 字体的背景 -->
+	 		<p class="bg-muted">12345</p>
+	 		<p class="bg-primary">12345</p>
+	 		<p class="bg-success">12345</p>
+	 		<p class="bg-info">12345</p>
+	 		<p class="bg-warning">12345</p>
+	 		<p class="bg-danger">12345</p>	 	
+	 	</div>
+	 	<div class="row">
+	 	<!-- 三角、关闭按钮 -->
+	 		<span class="caret"></span>
+			<button class="close">&times;</button>
+	 	</div>
+	 	<div class="row" style="border: 1px solid red;">
+	 	<!-- 浮动 row自带清除浮动-->
+		 	<div class="pull-left">1</div>
+		 	<div class="pull-right">2</div>
+	 	</div>
+	 	<div class="row">
+	 	<!-- 清除浮动-->
+	 		<div style="border: 1px solid green;" class="clearfix">
+	 			<div class="pull-left">1</div>
+		 		<div class="pull-right">2</div>
+	 		</div>		 	
+	 	</div>
+	 	<div class="row">
+	 	<!-- 居中对齐-->
+		 	<div style="border: 1px solid #f00;width: 100px;height: 100px;" class="center-block"></div>
+	 	</div>
+	 	<div class="row sh">
+	 	<!-- 显示隐藏 invisible隐藏了但是占位置-->
+		 	<div class="col-lg-3 show">1</div>
+		 	<div class="col-lg-3 hidden">2</div>
+		 	<div class="col-lg-3">3</div>
+		 	<div class="col-lg-2 invisible">4</div>
+		 	<div class="col-lg-1">5</div>
+	 	</div>
+	 </div>
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

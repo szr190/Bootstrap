@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>02-提示框</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	
+	<!--  -->
+	<div class="container">
+		<div class="row" style="margin:200px 100px;">
+			<button class="btn btn-primary" data-toggle="popover" data-placement="top" title="这是弹框标题" data-content="这是弹框的内容11111111111111111111111111111111111">点击我弹出框top</button>
+			<hr>
+			<button class="btn btn-primary" data-toggle="popover" data-placement="bottom" title="这是弹框标题" data-content="这是弹框的内容11111111111111111111111111111111111">点击我弹出框bottom</button>
+			<hr>
+			<button class="btn btn-primary" data-toggle="popover" data-placement="left" title="这是弹框标题" data-content="这是弹框的内容11111111111111111111111111111111111">点击我弹出框left</button>
+			<hr>
+			<button class="btn btn-primary btnShow" data-toggle="popover" data-placement="right" title="这是弹框标题" data-content="这是弹框的内容11111111111111111111111111111111111">点击我弹出框right</button>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$("button").popover();
+		$(".btnShow").popover('show');
+	</script>
+</body>
+</html>

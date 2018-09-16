@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<!-- 
+		nav 导航的基础样式,写在ul上
+		nav-tabs 变成横向,且有一条下划线
+		active 就像一个选项卡的激活状态,下面没有线
+	 -->
+	<div class="container">
+		<div class="row">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="">首页</a></li>
+				<li><a href="">航海历险记</a></li>
+				<li><a href="">魔法涂涂故事会</a></li>
+				<li><a href="">智海云天</a></li>
+			</ul>
+		</div>
+		<hr>
+	<!-- 胶囊式导航
+		nav-pills
+	-->
+		<div class="row">
+			<ul class="nav nav-pills">
+				<li class="active"><a href="">首页</a></li>
+				<li><a href="">航海历险记</a></li>
+				<li><a href="">魔法涂涂故事会</a></li>
+				<li><a href="">智海云天</a></li>
+			</ul>
+		</div>
+		<hr>
+	<!-- 胶囊式导航竖排
+		nav-stacked
+	-->
+		<div class="row">
+			<ul class="nav nav-pills nav-stacked">
+				<li class="active"><a href="">首页</a></li>
+				<li><a href="">航海历险记</a></li>
+				<li><a href="">魔法涂涂故事会</a></li>
+				<li><a href="">智海云天</a></li>
+			</ul>
+		</div>
+		<hr>
+	<!-- 胶囊式导航两端对齐
+		nav-justified
+	-->
+		<div class="row">
+			<ul class="nav nav-pills nav-justified">
+				<li class="active"><a href="">首页</a></li>
+				<li><a href="">航海历险记</a></li>
+				<li><a href="">魔法涂涂故事会</a></li>
+				<li><a href="">智海云天</a></li>
+			</ul>
+		</div>
+		<hr>
+	<!-- 
+		导航中放下拉菜单
+	-->
+		<div class="row">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="">首页</a></li>
+				<li><a href="">航海历险记</a></li>
+				<li><a href="">魔法涂涂故事会</a></li>
+				<li><a href="">智海云天</a></li>
+				<li>
+						<a href="" data-toggle="dropdown">下拉 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>html</li>
+							<li>css</li>
+							<li>js</li>
+						</ul>
+				</li>
+			</ul>
+		</div>
+
+
+
+	</div>
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

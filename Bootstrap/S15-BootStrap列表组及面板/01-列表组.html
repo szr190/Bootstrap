@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>01-列表组</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<!-- 
+		list-group 列表组 ul
+		list-group-item 列表项 li
+	 -->
+	<div class="container">
+		<div class="row">
+			<ul class="list-group">
+				<li class="list-group-item">1</li>
+				<li class="list-group-item">2</li>
+				<li class="list-group-item">3</li>
+				<li class="list-group-item">4</li>
+				<li class="list-group-item">5</li>
+				<li class="list-group-item">6</li>
+			</ul>
+		</div>
+		<hr>
+		<!-- 给每个列表项添加了一个标记,标记就会自动跑到右侧 -->
+		<div class="row">
+			<ul class="list-group">
+				<li class="list-group-item">1<span class="badge">10</span> </li>
+				<li class="list-group-item">2<span class="badge">9</span> </li>
+				<li class="list-group-item">3<span class="badge">8</span> </li>
+				<li class="list-group-item">4<span class="badge">7</span> </li>
+				<li class="list-group-item">5<span class="badge">6</span> </li>
+				<li class="list-group-item">6<span class="badge">5</span> </li>
+			</ul>
+		</div>
+		<hr>
+		<!-- 用a标签做的列表组可以添加激活状态和禁用状态及背景色 -->
+		<div class="row">
+			<div class="list-group">
+				<a class="list-group-item active" href="">1 <span class="badge">10</span> </a>
+				<a class="list-group-item disabled">2<span class="badge">9</span> </a>
+				<a class="list-group-item list-group-item-success">3<span class="badge">8</span> </a>
+				<a class="list-group-item list-group-item-info">4<span class="badge">7</span> </a>
+				<a class="list-group-item list-group-item-warning">5<span class="badge">6</span> </a>
+				<a class="list-group-item list-group-item-danger">6<span class="badge">5</span> </a>
+			</div>
+		</div>
+		<hr>
+		<!-- 
+			list-group-item-heading	列表组标题
+			list-group-item-text	列表组文本内容
+		 -->
+		<div class="row">
+			<ul class="list-group">
+				<li class="list-group-item active">
+					<h4 class="list-group-item-heading">szr</h4>
+					<p class="list-group-item-text">111111</p>
+				</li>
+				<li class="list-group-item">
+					<h4 class="list-group-item-heading">szr</h4>
+					<p class="list-group-item-text">111111</p>
+				</li>
+				<li class="list-group-item">
+					<h4 class="list-group-item-heading">szr</h4>
+					<p class="list-group-item-text">111111</p>
+				</li>
+				<li class="list-group-item">
+					<h4 class="list-group-item-heading">szr</h4>
+					<p class="list-group-item-text">111111</p>
+				</li>
+				<li class="list-group-item">
+					<h4 class="list-group-item-heading">szr</h4>
+					<p class="list-group-item-text">111111</p>
+				</li>
+				<li class="list-group-item">
+					<h4 class="list-group-item-heading">szr</h4>
+					<p class="list-group-item-text">111111</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>
